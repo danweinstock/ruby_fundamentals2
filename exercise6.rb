@@ -1,4 +1,4 @@
-grocery_list = ["eggs", "bacon", "coffee", "milk"]
+grocery_list = ["eggs", "coffee", "bacon", "milk", "salmon"]
 grocery_list<<"rice"
 grocery_list.each do |x|
 	puts "* #{x}"
@@ -10,3 +10,9 @@ if true
 else
 	puts "You need to pick up bananas."
 end
+puts grocery_list[1]
+puts "Alphabetized list"
+puts grocery_list.sort
+puts "couldn't find salmon"
+grocery_list.delete "salmon"
+puts grocery_list
