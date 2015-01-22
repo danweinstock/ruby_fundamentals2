@@ -8,9 +8,10 @@ students.each do |k, v|
  puts  "#{k}: #{v} students"
 
 end
-puts students.keys
-# new_students = students[students.map { |k, v| [k, v * 1.05]}]
-# puts new_students
+students.each do |x,y|
+  expand = y *= 1.05
+  puts "#{x}: #{expand.to_i}"
+  end
 puts "Deleting the second cohort"
 students.delete(:cohort2)
 puts students
